@@ -1,0 +1,131 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+
+    <style type="text/css">
+        body, html, #allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #l-map {
+            height: 100%;
+            width: 78%;
+            float: left;
+            border-right: 2px solid #bcbcbc;
+        }
+
+        #r-result {
+            height: 100%;
+            width: 20%;
+            float: left;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=ob3qKuZWFoGsPTXfB8ibau7Zjfdv6xEd"></script>
+
+    <title>百度地图</title>
+</head>
+<body>
+    <div id="allmap"></div>
+</body>
+</html>
+<script src="//api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+<script src="//api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+
+<script type="text/javascript">
+
+    var map = new BMap.Map("allmap");
+
+    map.centerAndZoom(new BMap.Point(113.02698, 28.24885), 12);
+    map.addControl(new BMap.NavigationControl());
+
+    map.addControl(new BMap.OverviewMapControl());
+
+    map.addControl(new BMap.ScaleControl());
+
+    map.enableScrollWheelZoom();
+
+    map.addControl(new BMap.MapTypeControl());
+
+    var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+    var cityName;
+    function myFun(result) {
+        cityName = result.name;
+        map.setCenter(cityName);
+    }
+
+    var myCity = new BMap.LocalCity();
+
+
+    myCity.get(myFun);
+
+    var opts = {
+        width: 250,     // 信息窗口宽度
+        height: 80,     // 信息窗口高度
+        title: "信息窗口", // 信息窗口标题
+        enableMessage: true//设置允许信息窗发送短息
+    };
+    // 显示信息函数1
+    function addClickHandler(content, marker) {
+        marker.addEventListener("click", function (e) {
+            openInfo(content, e)
+        }
+        );
+    }
+    // 显示信息函数2
+    function openInfo(content, e) {
+        var p = e.target;
+        var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+        var infoWindow = new BMap.InfoWindow(content, opts);  // 创建信息窗口对象
+        map.openInfoWindow(infoWindow, point); //开启信息窗口
+    }
+
+
+    //搜索 获取指定位置坐标
+    var i = 0;
+    var j = 0;
+    var point = [];
+    var marker = [];
+    var x = [];
+    var str = [];   // 信息窗口字符串
+
+    function getSearchCoordinate(a, b) {
+        x[j] = a;
+        x[j + 1] = b;
+        point[i] = new BMap.Point(a, b);
+        map.centerAndZoom(point[i], 15);
+        marker[i] = new BMap.Marker(point[i]); // 创建标注
+        var label = new BMap.Label(i + 1, {
+            offset: new BMap.Size(5, 4)
+        });
+        label.setStyle({
+            background: 'none', color: '#fff', border: 'none'// 只要对label样式进行设置就可达到在标注图标上显示数字的效果
+        });
+        marker[i].setLabel(label);//显示地理名称 a
+        map.addOverlay(marker[i]);               // 将标注添加到地图中
+        str[i] = "<p style='font:12px arial,sans-serif;margin:0;line-height:1.5;'>
+        " + '经度'+a +
+        "
+            < p style = 'font:12px arial,sans-serif;margin:0;line-height:1.5;' > "+'纬度'+b+"</p > "+"</div > ";
+        addClickHandler(str[i], marker[i]);
+
+        if (i > 0) {
+            var polyline = new BMap.Polyline([
+                new BMap.Point(x[j], x[j + 1]),   // 起始点的经纬度
+                new BMap.Point(x[j - 2], x[j - 1])  // 终止点的经纬度
+            ], {
+                strokeColor: "red",// 设置颜色
+                strokeWeight: 3, // 宽度
+                strokeOpacity: 0.5
+            });// 透明度
+            map.addOverlay(polyline);
+        }
+        j = j + 2;
+        i = i + 1;
+    }
+
+</script>

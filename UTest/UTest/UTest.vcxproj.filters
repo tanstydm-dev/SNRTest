@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{39e7da83-93c3-4da6-9e57-0556e0eb5e37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Buf">
+      <UniqueIdentifier>{36802349-1a57-4271-b50a-412c1af92400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Com">
+      <UniqueIdentifier>{c7b889ef-885d-4722-a247-bb77bc4f1ac6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Proc">
+      <UniqueIdentifier>{abca5814-cd35-4a82-a1ac-62a8b4602d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\IceCtrl">
+      <UniqueIdentifier>{5125439f-14e7-4593-a708-f2f79b2fee24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NavMsg">
+      <UniqueIdentifier>{a57d7a27-b296-43ed-abab-b4e5fde22133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Map">
+      <UniqueIdentifier>{fcde97e5-988a-4e17-9fe6-ea67ae32c516}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UTest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CHeadernStruct.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufByteProc\AscFuncs.h">
+      <Filter>src\Buf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufByteProc\HexMutCStr.h">
+      <Filter>src\Buf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufByteProc\SfrmExtract.h">
+      <Filter>src\Buf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufByteProc\SrngLib.h">
+      <Filter>src\Buf</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Com\ComSet.h">
+      <Filter>src\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Com\Dcb32.h">
+      <Filter>src\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Com\MTDeque.h">
+      <Filter>src\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Com\MyWin32Port.h">
+      <Filter>src\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Com\rs232.h">
+      <Filter>src\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Com\Win32Port.h">
+      <Filter>src\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\GetDzPtl.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\NavConstant.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\NavCordTrans.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\PtlNEMA0183In.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\PtlNEMA0183Out.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IceCtrl\IceAutoTestC.h">
+      <Filter>src\IceCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IceCtrl\IceErrCtrl.h">
+      <Filter>src\IceCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IceCtrl\IceSocket.h">
+      <Filter>src\IceCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IceCtrl\icetype.h">
+      <Filter>src\IceCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CCNOList.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CDataProc.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CDHVList.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CGGAList.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CGSAList.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CGSVList.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CPtlMsg.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CPtlTab.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CSatCNRDlg.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CSatDistImg.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CMyListCtrl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\ErrorCalcute.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PtlProc\SCalc.h">
+      <Filter>src\Proc</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NavMsg\CErrCal.h">
+      <Filter>src\NavMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Map\CMapDlg.h">
+      <Filter>src\Map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufByteProc\AscFuncs.c">
+      <Filter>src\Buf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufByteProc\HexMutCStr.cpp">
+      <Filter>src\Buf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufByteProc\SfrmExtract.c">
+      <Filter>src\Buf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufByteProc\SrngLib.c">
+      <Filter>src\Buf</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Com\ComSet.cpp">
+      <Filter>src\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Com\Dcb32.cpp">
+      <Filter>src\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Com\rs232.cpp">
+      <Filter>src\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Com\Win32Port.cpp">
+      <Filter>src\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PtlProc\GetDzPtl.cpp">
+      <Filter>src\Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PtlProc\NavCordTrans.c">
+      <Filter>src\Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PtlProc\PtlNEMA0183In.c">
+      <Filter>src\Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PtlProc\PtlNEMA0183Out.c">
+      <Filter>src\Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IceCtrl\IceAutoTestC.c">
+      <Filter>src\IceCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IceCtrl\IceErrCtrl.c">
+      <Filter>src\IceCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IceCtrl\IceErrCtrlWin32.cpp">
+      <Filter>src\IceCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IceCtrl\IceSocket.c">
+      <Filter>src\IceCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CCNOList.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CDataProc.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CDHVList.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CGGAList.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CGSAList.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CGSVList.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CPtlMsg.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CPtlTab.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CSatCNRDlg.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CSatDistImg.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CMyListCtrl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PtlProc\ErrorCalcute.c">
+      <Filter>src\Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PtlProc\SCalc.c">
+      <Filter>src\Proc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\NavMsg\CErrCal.cpp">
+      <Filter>src\NavMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map\CMapDlg.cpp">
+      <Filter>src\Map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UTest.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UTest.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="src\Map\BaiduMap.html">
+      <Filter>src\Map</Filter>
+    </None>
+    <None Include="src\Map\BMap.html">
+      <Filter>src\Map</Filter>
+    </None>
+    <None Include="src\Map\TianMap.html">
+      <Filter>src\Map</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\UTest.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\UTestDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\Map\BrowserMap.txt">
+      <Filter>src\Map</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+</Project>
